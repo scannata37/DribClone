@@ -1,0 +1,31 @@
+.hero.is-dark {
+	background-color: #282828 !important;
+}
+
+.shot-wrapper {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+	border-radius: 2px;
+	padding: 10px;
+	background: white;
+}
+.shots {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem;
+	@media only screen and (min-width: 1600px) {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	@media only screen and (max-width: 1300px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@media only screen and (max-width: 1100px) { 
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@media only screen and (max-width: 800px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media only screen and (max-width: 400px) {
+		grid-template-columns: 1fr;
+	}
+
+}
